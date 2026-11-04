@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Search</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles_search.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Navigation -->
+        <nav class="navigation">
+            <div class="menu-container">
+                <ul>
+                    <li><a href="Recipe_home.html">Home</a></li>
+                    <li><a href="Recipe_details.html">Recipes</a></li>
+                    <li><a href="Recipe_search.html">Search</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Search page -->
+        <div class="search-container">
+
+            <!-- Search and filters -->
+            <section class="search-section">
+                <div class="search-left">
+
+                    <h1>FULL SEARCH</h1>
+
+                    <div class="hero-search">
+                    <div class="search-box">
+                        <span class="search-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m15 15l6 6m-11-4a7 7 0 1 1 0-14a7 7 0 0 1 0 14" />
+                            </svg>
+                        </span>
+                        <input type="text" placeholder="Search" class="search-input">
+                    </div>
+                </div>
+
+                    <p>Let's go already!</p>
+
+                </div>
+
+                <!-- Category filters -->
+                <div class="search-right">
+
+                    <h2>Search filter : category</h2>
+
+                    <form class="category-form">
+
+                        <div class="category-column">
+
+                            <label>
+                                <input type="radio" name="category" value="seafood">
+                                Seafood
+                            </label>
+
+                            <label>
+                                <input type="radio" name="category" value="meats" checked>
+                                Beef/Pork
+                            </label>
+
+                            <label>
+                                <input type="radio" name="category" value="chicken">
+                                Chicken
+                            </label>
+
+                            <label>
+                                <input type="radio" name="category" value="misc">
+                                Snacks
+                            </label>
+
+                        </div>
+
+                        <div class="category-column">
+
+                            <label>
+                                <input type="radio" name="category" value="pasta">
+                                Pasta
+                            </label>
+
+                            <label>
+                                <input type="radio" name="category" value="veg">
+                                Vegetarian
+                            </label>
+
+                            <label>
+                                <input type="radio" name="category" value="dessert">
+                                Dessert
+                            </label>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+            <!-- Search results -->
+            <section class="search-results">
+
+                <!-- Seafood -->
+                <div class="search-result">
+                    
+                    <p class="result-category" data-category="seafood">
+                     Category: <span data-category="seafood">SEAFOOD</span>
+                    </p>
+
+                    <h2>GARLIC BUTTER SHRIMP</h2>
+
+                    <p>
+                        Juicy shrimp cooked in garlic butter with fresh lemon and herbs.
+                        This simple seafood recipe is full of flavour and perfect for
+                        a quick dinner. Serve with rice, pasta or fresh bread.
+                    </p>
+
+                </div>
+
+                <!-- Chicken -->
+                <div class="search-result">
+
+                    <p class="result-category" data-category="chicken">
+                        <span class="white_col">Category:</span> <span data-category="chicken">CHICKEN</span>
+                    </p>
+
+                    <h2>CREAMY CHICKEN PASTA</h2>
+
+                    <p>
+                        Tender chicken pieces served with pasta in a creamy garlic sauce.
+                        A comforting meal made with simple ingredients that is perfect
+                        for busy evenings when you want something delicious.
+                    </p>
+
+                </div>
+
+                <!-- Pasta -->
+                <div class="search-result">
+
+                    <p class="result-category" data-category="pasta">
+                        <span class="white_col">Category:</span> <span data-category="pasta">PASTA</span>
+                    </p>
+
+                    <h2>CLASSIC TOMATO PASTA</h2>
+
+                    <p>
+                        A delicious pasta dish with a rich tomato sauce, garlic,
+                        fresh basil and Parmesan cheese. Easy to prepare and
+                        perfect for a quick homemade dinner.
+                    </p>
+
+                </div>
+
+                <!-- Vegetarian -->
+                <div class="search-result">
+
+                    <p class="result-category" data-category="veg">
+                        <span class="white_col">Category:</span> <span data-category="veg">VEGETARIAN</span>
+                    </p>
+
+                    <h2>ROASTED VEGETABLE BOWL</h2>
+
+                    <p>
+                        A colourful combination of roasted vegetables, fresh greens
+                        and a light dressing. This healthy vegetarian recipe is
+                        easy to prepare and full of flavour.
+                    </p>
+
+                </div>
+
+                <!-- Meats -->
+                <div class="search-result">
+
+                    <p class="result-category" data-category="meats">
+                        Category: <span data-category="meats">BEEF/PORK</span>
+                    </p>
+
+                    <h2>SLOW COOKED BEEF STEW</h2>
+
+                    <p>
+                        Tender beef slowly cooked with carrots, potatoes and herbs
+                        in a rich sauce. A comforting homemade dish that is
+                        especially good during colder days.
+                    </p>
+
+                </div>
+
+                <!-- Dessert -->
+                <div class="search-result">
+
+                    <p class="result-category" data-category="dessert">
+                        Category: <span data-category="dessert">DESSERT</span>
+                    </p>
+
+                    <h2>CHOCOLATE BROWNIES</h2>
+
+                    <p>
+                        Rich chocolate brownies with a soft centre and slightly
+                        crispy edges. A simple dessert for chocolate lovers,
+                        perfect with a scoop of vanilla ice cream.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+
+                <!-- Social media -->
+                <div class="footer-social">
+
+                    <a href="#">
+                        <span class="footer-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                viewBox="0 0 1024 1024">
+                                <path d="M0 0h1024v1024H0z" fill="none" />
+                                <path fill="currentColor"
+                                    d="M960 509.2c0-2.2 0-4.7-.1-7.6c-.1-8.1-.3-17.2-.5-26.9c-.8-27.9-2.2-55.7-4.4-81.9c-3-36.1-7.4-66.2-13.4-88.8a139.52 139.52 0 0 0-98.3-98.5c-28.3-7.6-83.7-12.3-161.7-15.2c-37.1-1.4-76.8-2.3-116.5-2.8c-13.9-.2-26.8-.3-38.4-.4h-29.4c-11.6.1-24.5.2-38.4.4c-39.7.5-79.4 1.4-116.5 2.8c-78 3-133.5 7.7-161.7 15.2A139.35 139.35 0 0 0 82.4 304C76.3 326.6 72 356.7 69 392.8c-2.2 26.2-3.6 54-4.4 81.9c-.3 9.7-.4 18.8-.5 26.9c0 2.9-.1 5.4-.1 7.6v5.6c0 2.2 0 4.7.1 7.6c.1 8.1.3 17.2.5 26.9c.8 27.9 2.2 55.7 4.4 81.9c3 36.1 7.4 66.2 13.4 88.8c12.8 47.9 50.4 85.7 98.3 98.5c28.2 7.6 83.7 12.3 161.7 15.2c37.1 1.4 76.8 2.3 116.5 2.8c13.9.2 26.8.3 38.4.4h29.4c11.6-.1 24.5-.2 38.4-.4c39.7-.5 79.4-1.4 116.5-2.8c78-3 133.5-7.7 161.7-15.2c47.9-12.8 85.5-50.5 98.3-98.5c6.1-22.6 10.4-52.7 13.4-88.8c2.2-26.2 3.6-54 4.4-81.9c.3-9.7.4-18.8.5-26.9c0-2.9.1-5.4.1-7.6zm-72 5.2c0 2.1 0 4.4-.1 7.1c-.1 7.8-.3 16.4-.5 25.7c-.7 26.6-2.1 53.2-4.2 77.9c-2.7 32.2-6.5 58.6-11.2 76.3c-6.2 23.1-24.4 41.4-47.4 47.5c-21 5.6-73.9 10.1-145.8 12.8c-36.4 1.4-75.6 2.3-114.7 2.8c-13.7.2-26.4.3-37.8.3h-28.6l-37.8-.3c-39.1-.5-78.2-1.4-114.7-2.8c-71.9-2.8-124.9-7.2-145.8-12.8c-23-6.2-41.2-24.4-47.4-47.5c-4.7-17.7-8.5-44.1-11.2-76.3c-2.1-24.7-3.4-51.3-4.2-77.9c-.3-9.3-.4-18-.5-25.7c0-2.7-.1-5.1-.1-7.1v-4.8c0-2.1 0-4.4.1-7.1c.1-7.8.3-16.4.5-25.7c.7-26.6 2.1-53.2 4.2-77.9c2.7-32.2 6.5-58.6 11.2-76.3c6.2-23.1 24.4-41.4 47.4-47.5c21-5.6 73.9-10.1 145.8-12.8c36.4-1.4 75.6-2.3 114.7-2.8c13.7-.2 26.4-.3 37.8-.3h28.6l37.8.3c39.1.5 78.2 1.4 114.7 2.8c71.9 2.8 124.9 7.2 145.8 12.8c23 6.2 41.2 24.4 47.4 47.5c4.7 17.7 8.5 44.1 11.2 76.3c2.1 24.7 3.4 51.3 4.2 77.9c.3 9.3.4 18 .5 25.7c0 2.7.1 5.1.1 7.1zM423 646l232-135l-232-133z" />
+                            </svg>
+                        </span>
+                        YouTube
+                    </a>
+
+                    <a href="#">
+                        <span class="footer-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                viewBox="0 0 1024 1024">
+                                <path d="M0 0h1024v1024H0z" fill="none" />
+                                <path fill="currentColor"
+                                    d="M512 306.9c-113.5 0-205.1 91.6-205.1 205.1S398.5 717.1 512 717.1S717.1 625.5 717.1 512S625.5 306.9 512 306.9m0 338.4c-73.4 0-133.3-59.9-133.3-133.3S438.6 378.7 512 378.7S645.3 438.6 645.3 512S585.4 645.3 512 645.3m213.5-394.6c-26.5 0-47.9 21.4-47.9 47.9s21.4 47.9 47.9 47.9s47.9-21.3 47.9-47.9a47.84 47.84 0 0 0-47.9-47.9M911.8 512c0-55.2.5-109.9-2.6-165c-3.1-64-17.7-120.8-64.5-167.6c-46.9-46.9-103.6-61.4-167.6-64.5c-55.2-3.1-109.9-2.6-165-2.6c-55.2 0-109.9-.5-165 2.6c-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6c46.9 46.9 103.6 61.4 167.6 64.5c55.2 3.1 109.9 2.6 165 2.6c55.2 0 109.9.5 165-2.6c64-3.1 120.8-17.7 167.6-64.5c46.9-46.9 61.4-103.6 64.5-167.6c3.2-55.1 2.6-109.8 2.6-165m-88 235.8c-7.3 18.2-16.1 31.8-30.2 45.8c-14.1 14.1-27.6 22.9-45.8 30.2C695.2 844.7 570.3 840 512 840s-183.3 4.7-235.9-16.1c-18.2-7.3-31.8-16.1-45.8-30.2c-14.1-14.1-22.9-27.6-30.2-45.8C179.3 695.2 184 570.3 184 512s-4.7-183.3 16.1-235.9c7.3-18.2 16.1-31.8 30.2-45.8s27.6-22.9 45.8-30.2C328.7 179.3 453.7 184 512 184s183.3-4.7 235.9 16.1c18.2 7.3 31.8 16.1 45.8 30.2c14.1 14.1 22.9 27.6 30.2 45.8C844.7 328.7 840 453.7 840 512s4.7 183.2-16.2 235.8" />
+                            </svg>
+                        </span>
+                        Instagram
+                    </a>
+
+                    <a href="#">
+                        <span class="footer-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path fill="currentColor"
+                                    d="M19.02 4.975A9.93 9.93 0 0 0 2.07 12A9.935 9.935 0 0 0 12 21.935a10 10 0 0 0 3.8-.75a10.2 10.2 0 0 0 3.22-2.16a9.934 9.934 0 0 0 0-14.05m-.7 13.34a8.92 8.92 0 0 1-5.32 2.57v-6.56h1.88a1 1 0 0 0 0-2H13v-2.74a1 1 0 0 1 1-1h1.2a1 1 0 0 0 0-2h-1.7a2.5 2.5 0 0 0-2.5 2.5v3.24H9.13a1 1 0 1 0 0 2H11v6.56a8.919 8.919 0 1 1 9.26-5.47a9.1 9.1 0 0 1-1.94 2.9" />
+                            </svg>
+                        </span>
+                        Facebook
+                    </a>
+
+                </div>
+
+                <!-- Footer navigation -->
+                <div class="footer-menu">
+                    <a href="Recipe_home.html">Home</a>
+                    <a href="Recipe_details.html">Recipe</a>
+                    <a href="#">About</a>
+                </div>
+
+                <!-- Right side -->
+                <div class="footer-right">
+
+                    <div class="footer-links">
+                        <a href="https://open.spotify.com/">
+                            https://open.spotify.com/track/...
+                        </a>
+                        <a href="https://open.spotify.com/">
+                            https://open.spotify.com/album/...
+                        </a>
+                    </div>
+
+                    <div class="footer-eco">
+                        <span class="eco-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                viewBox="0 0 16 16">
+                                <path d="M0 0h16v16H0z" fill="none" />
+                                <g fill="currentColor">
+                                    <path
+                                        d="M7.542 1.014A7 7 0 0 1 14 4.396V3a1.001 1.001 0 0 1 2 0v4a1 1 0 0 1-1 1h-1.933c.32-.905-.312-2-1.419-2h.933a5 5 0 0 0-1.67-2.065l-.099-.068l.158-.625a1 1 0 0 0-1.62-1.001l-.91.78a5 5 0 0 0-5.436 4.808c-.283.556-.165 1.225.226 1.672a5 5 0 0 0 1.956 2.63l-.156.627a1 1 0 0 0 1.62 1l.91-.779a5 5 0 0 0 4.77-2.48a1.001 1.001 0 0 1 1.732 1a7 7 0 0 1-8.312 3.13a7.005 7.005 0 0 1-4.69-7.543a7 7 0 0 1 6.482-6.072" />
+                                    <path
+                                        d="M9 7h2.648l.084.007a.5.5 0 0 1 .118.035l.026.01l.035.022l.022.014l.012.008q.014.01.025.022l.021.017a.5.5 0 0 1 .072.087l.016.025l.018.034l.011.025l.012.033a.5.5 0 0 1 .024.106q.004.02.004.04v.028a.5.5 0 0 1-.061.227l-.01.019a.5.5 0 0 1-.104.12L6 13l.094-.378L7 9H4.35a.5.5 0 0 1-.325-.88l5.639-4.834L10 3z" />
+                                </g>
+                            </svg>
+                        </span>
+                        <p>
+                            Etsy is powered by 100%<br>
+                            renewable electricity.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

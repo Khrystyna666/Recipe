@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Navigation -->
+        <nav class="navigation">
+            <div class="menu-container">
+                <ul>
+                    <li><a href="Recipe_home.html">Home</a></li>
+                    <li><a href="Recipe_details.html">Recipes</a></li>
+                    <li><a href="Recipe_search.html">Search</a></li>
+                </ul>
+            </div>
+            <div class="hamburger_menu">
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
+                        <path d="M0 0h512v512H0z" fill="none" />
+                        <path fill="currentColor" d="M80 96h352v32H80zm0 144h352v32H80zm0 144h352v32H80z" />
+                    </svg>
+                </span>
+            </div>
+        </nav>
+
+        <!--Navigation mobile-->
+        <div class="mobile_menu">
+            <ul>
+                <li><a href="Recipe_home.html">Home</a></li>
+                <li><a href="Recipe_details.html">Recipes</a></li>
+                <li><a href="Recipe_search.html">Search</a></li>
+            </ul>
+        </div>
+
+
+
+
+        <!-- Hero -->
+        <div class="hero">
+            <div class="hero-container">
+
+                <div class="hero-text">
+                    <h6>#1 Bender's most shiny recipe</h6>
+                    <h4>Boozy brown</h4>
+                    <h4>Lentil soup</h4>
+                    <h6>40% healthy</h6>
+                </div>
+
+                <div class="hero-search">
+                    <div class="search-box">
+                        <span class="search-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m15 15l6 6m-11-4a7 7 0 1 1 0-14a7 7 0 0 1 0 14" />
+                            </svg>
+                        </span>
+                        <input type="text" placeholder="Search" class="search-input">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Today's recipe -->
+        <section class="todays_recipes">
+            <div class="todays_recipes_headline">Today's Resipe</div>
+            <div class="todays_resipes_content">
+                <!-- Card-block start (copy me) -->
+                <div class="todays_resipes_content_block">
+                    <div class="todays_resipes_content_block_image">
+                        <img src="https://picsum.photos/300/175" alt="">
+                    </div>
+                    <div class="todays_resipes_content_block_text">
+                        <div class="todays_resipes_content_block_text_top">
+                            <h5>FoodName</h5>
+                            <p>Lorem Ipsum text goes here</p>
+                        </div>
+                        <div class="todays_resipes_content_block_text_bottom">
+                            <div data-category="seafood" class="todays_resipes_content_bottom_area">
+                                <div class="todays_resipes_content_bottom_area_left">
+                                    <p data-category="seafood" id="category-color">Seafood</p>
+                                    <p>Recipe</p>
+                                </div>
+                                <div class="todays_resipes_content_bottom_area_right">
+                                    <div class="todays_resipes_content_bottom_area_right_button">
+                                        <button>
+                                            <a href="#">How to</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card-block stop (copy me also) -->
+
+                <!-- Card-block start (copy me) -->
+                <div class="todays_resipes_content_block">
+                    <div class="todays_resipes_content_block_image">
+                        <img src="https://picsum.photos/300/175" alt="">
+                    </div>
+                    <div class="todays_resipes_content_block_text">
+                        <div class="todays_resipes_content_block_text_top">
+                            <h5>FoodName</h5>
+                            <p>Lorem Ipsum text goes here</p>
+                        </div>
+                        <div class="todays_resipes_content_block_text_bottom">
+                            <div data-category="seafood" class="todays_resipes_content_bottom_area">
+                                <div class="todays_resipes_content_bottom_area_left">
+                                    <p data-category="seafood" id="category-color">Seafood</p>
+                                    <p>Recipe</p>
+                                </div>
+                                <div class="todays_resipes_content_bottom_area_right">
+                                    <div class="todays_resipes_content_bottom_area_right_button">
+                                        <button>
+                                            <a href="#">How to</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card-block stop (copy me also) -->
+
+                <!-- Card-block start (copy me) -->
+                <div class="todays_resipes_content_block">
+                    <div class="todays_resipes_content_block_image">
+                        <img src="https://picsum.photos/300/175" alt="">
+                    </div>
+                    <div class="todays_resipes_content_block_text">
+                        <div class="todays_resipes_content_block_text_top">
+                            <h5>FoodName</h5>
+                            <p>Lorem Ipsum text goes here</p>
+                        </div>
+                        <div class="todays_resipes_content_block_text_bottom">
+                            <div data-category="seafood" class="todays_resipes_content_bottom_area">
+                                <div class="todays_resipes_content_bottom_area_left">
+                                    <p data-category="seafood" id="category-color">Seafood</p>
+                                    <p>Recipe</p>
+                                </div>
+                                <div class="todays_resipes_content_bottom_area_right">
+                                    <div class="todays_resipes_content_bottom_area_right_button">
+                                        <button>
+                                            <a href="#">How to</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card-block stop (copy me also) -->
+
+                <!-- Card-block start (copy me) -->
+                <div class="todays_resipes_content_block">
+                    <div class="todays_resipes_content_block_image">
+                        <img src="https://picsum.photos/300/175" alt="">
+                    </div>
+                    <div class="todays_resipes_content_block_text">
+                        <div class="todays_resipes_content_block_text_top">
+                            <h5>FoodName</h5>
+                            <p>Lorem Ipsum text goes here</p>
+                        </div>
+                        <div class="todays_resipes_content_block_text_bottom">
+                            <div data-category="seafood" class="todays_resipes_content_bottom_area">
+                                <div class="todays_resipes_content_bottom_area_left">
+                                    <p data-category="seafood" id="category-color">Seafood</p>
+                                    <p>Recipe</p>
+                                </div>
+                                <div class="todays_resipes_content_bottom_area_right">
+                                    <div class="todays_resipes_content_bottom_area_right_button">
+                                        <button>
+                                            <a href="#">How to</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card-block stop (copy me also) -->
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="categories">
+            <div class="todays_recipes_headline">Categories</div>
+
+            <div class="categories_content">
+                <!--Category start coppy-->
+                <div class="categories_content_block">
+                    <span data-category="seafood" class="iconify">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32">
+                            <path d="M0 0h32v32H0z" fill="none" />
+                            <circle cx="24" cy="7" r="1" fill="currentColor" />
+                            <path fill="currentColor"
+                                d="M26 2a16.02 16.02 0 0 0-16 16v2H3a1 1 0 0 0-.707 1.707l8 8A1 1 0 0 0 12 29v-7h2A16.02 16.02 0 0 0 30 6V2ZM10 26.586L5.414 22H10ZM12 20v-2a13.94 13.94 0 0 1 3.908-9.678l7.77 7.77A13.94 13.94 0 0 1 14 20ZM28 6a13.9 13.9 0 0 1-2.98 8.606L17.395 6.98A13.9 13.9 0 0 1 26 4h2Z" />
+                        </svg>
+                    </span>
+                    <p data-category="seafood">Seafood</p>
+                </div>
+                <!-- Category stop copy -->
+
+                <!--Category start coppy-->
+                <div class="categories_content_block">
+                    <span data-category="chicken" class="iconify">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 14 14">
+                            <path d="M0 0h14v14H0z" fill="none" />
+                            <g fill="none" stroke="currentColor" stroke-linecap="round">
+                                <path stroke-linejoin="round"
+                                    d="M2.243 2.246v1.562m4.563-1.562v1.562M4.525 1.083v1.562" />
+                                <path d="M11.509 4.602a.955.955 0 1 0 1.91 0a.955.955 0 1 0-1.91 0" />
+                                <path stroke-linejoin="round"
+                                    d="m10.841 8.677l.212.093c1.48.7 1.889 1.606 1.889 2.85v.298a1 1 0 0 1-1 1H1.64c-.327 0-.634-.161-.76-.463c-.277-.669-.599-2.013.238-3.685c1.21-2.416 4.187-2.947 6.094-1.947l.09.046" />
+                                <path
+                                    d="M10.158 10.006c.928-1.018.976-2.485.108-3.275s-2.323-.605-3.25.413c-.843.925-.96 2.219-.325 3.04q.097.127.217.235" />
+                                <path stroke-linejoin="round" d="M11.806 5.296L10.32 6.781" />
+                            </g>
+                        </svg>
+                    </span>
+                    <p data-category="chicken">Chicken</p>
+                </div>
+                <!-- Category stop copy -->
+
+                <!--Category start coppy-->
+                <div class="categories_content_block">
+                    <span data-category="pasta" class="iconify">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32">
+                            <path d="M0 0h32v32H0z" fill="none" />
+                            <path fill="currentColor"
+                                d="m11.414 15l-8-8L2 8.414L8.586 15H2v1a14 14 0 0 0 28 0v-1ZM16 28A12.017 12.017 0 0 1 4.042 17h23.917A12.017 12.017 0 0 1 16 28" />
+                            <path fill="currentColor"
+                                d="M22 8a5 5 0 0 0-1.57.255A8.02 8.02 0 0 0 14 5a7.94 7.94 0 0 0-4.906 1.68L4.414 2L3 3.414l6.05 6.05l.707-.707A5.96 5.96 0 0 1 14 7a6.02 6.02 0 0 1 4.688 2.264a5 5 0 0 0-.59.61A2.99 2.99 0 0 1 15.754 11H12v2h3.754a4.98 4.98 0 0 0 3.904-1.874A3 3 0 0 1 25 13h2a5.006 5.006 0 0 0-5-5" />
+                        </svg>
+                    </span>
+                    <p data-category="pasta">Pasta</p>
+                </div>
+                <!-- Category stop copy -->
+
+                <!--Category start coppy-->
+                <div class="categories_content_block">
+                    <span data-category="veg" class="iconify">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5">
+                                <path d="M4 12h16c0 5 -4 9 -8 9s-8 -4 -8 -9" />
+                                <path d="M12 12c0 -4 -2 -7 -5 -8 -1 4 1 7 5 8" />
+                                <path d="M12 12c0 -3 2 -6 5 -7 1 3 -1 6 -5 7" />
+                            </g>
+                        </svg>
+                    </span>
+                    <p data-category="veg">Vegetarian</p>
+                </div>
+                <!-- Category stop copy -->
+
+                <!--Category start coppy-->
+                <div class="categories_content_block">
+                    <span data-category="misc" class="iconify">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <g fill="currentColor">
+                                <path
+                                    d="M17.231 4.298A2.75 2.75 0 0 1 19.944 2H22v1.5h-2.056a1.25 1.25 0 0 0-1.233 1.045L18.635 5h3.453L20.42 20H18.5v-1.5h.579l1.333-12H10.6l.394 3.157l-1.488.186L8.9 5h8.214z" />
+                                <path fill-rule="evenodd"
+                                    d="M8 11.5a6 6 0 0 0-6 6v1.75a2.25 2.25 0 0 0 2.25 2.25h10A2.75 2.75 0 0 0 17 18.75V17.5a6 6 0 0 0-6-6zm6.25 8.5H6.372q.126-.354.128-.75V17.5a4.5 4.5 0 1 1 9 0v1.25c0 .69-.56 1.25-1.25 1.25M5 17.5c0-1.717.72-3.265 1.876-4.359A4.5 4.5 0 0 0 3.5 17.5v1.75a.75.75 0 0 0 1.5 0z"
+                                    clip-rule="evenodd" />
+                            </g>
+                        </svg>
+                    </span>
+                    <p data-category="misc">Snacks</p>
+                </div>
+                <!-- Category stop copy -->
+
+                <!--Category start coppy-->
+                <div class="categories_content_block">
+                    <span data-category="meats" class="iconify">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2">
+                                <path
+                                    d="m13.62 8.382l1.966-1.967A2 2 0 1 1 19 5a2 2 0 1 1-1.413 3.414l-1.82 1.821m-9.863 8.361c2.733 2.734 5.9 4 7.07 2.829c1.172-1.172-.094-4.338-2.828-7.071c-2.733-2.734-5.9-4-7.07-2.829c-1.172 1.172.094 4.338 2.828 7.071M7.5 16l1 1" />
+                                <path
+                                    d="M12.975 21.425c3.905-3.906 4.855-9.288 2.121-12.021c-2.733-2.734-8.115-1.784-12.02 2.121" />
+                            </g>
+                        </svg>
+                    </span>
+                    <p data-category="meats">Meat</p>
+                </div>
+                <!-- Category stop copy -->
+
+                <!--Category start coppy-->
+                <div class="categories_content_block">
+                    <span data-category="dessert" class="iconify">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024">
+                            <path d="M0 0h1024v1024H0z" fill="none" />
+                            <path fill="currentColor"
+                                d="M128 416v-48a144 144 0 0 1 168.6-141.9a224.1 224.1 0 0 1 430.8 0A144 144 0 0 1 896 368v48a384 384 0 0 1-352 382.7V896h-64v-97.3A384 384 0 0 1 128 416m287.1-32h193.8a144 144 0 0 1 58.9-132.8a160 160 0 0 0-311.6 0A144 144 0 0 1 415.1 384m-72.9 0a72 72 0 1 0-140.5 0zm339.6 0h140.4a72 72 0 1 0-140.5 0zM512 736a320 320 0 0 0 318.4-288H193.6A320 320 0 0 0 512 736M384 896h256a32 32 0 1 1 0 64H384a32 32 0 1 1 0-64" />
+                        </svg>
+                    </span>
+                    <p data-category="dessert">Dessert</p>
+                </div>
+                <!-- Category stop copy -->
+            </div>
+        </section>
+
+        <!-- Image section -->
+        <section class="image_section">
+
+            <div class="image_section_controller">
+                <div class="image_section_box">
+                    <h4>In the kitchen</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- content area -->
+        <section class="content-area">
+
+            <div class="todays_recipes_headline" id="haha">In the kitchen</div>
+            <div class="content-area_content">
+
+                <!--start copy content-->
+                <div class="content-area_content_box">
+                    <p class="content-area_content_box_paragraph">Something here</p>
+                    <h4>Im a header</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="content-area_content_image_button">
+                        <button>
+                            <a href="#">How to</a>
+                        </button>
+                    </div>
+                </div>
+                <!--done copy content-->
+
+                <!--start copy content-->
+                <div class="content-area_content_box_img">
+                    <img src="https://picsum.photos/560/380" alt="">
+                </div>
+                <!--done copy content-->
+
+                <!--start copy content-->
+                <div class="content-area_content_box_img">
+                    <img src="https://picsum.photos/560/380" alt="">
+                </div>
+                <!--done copy content-->
+
+                <!--start copy content-->
+                <div class="content-area_content_box">
+                    <p class="content-area_content_box_paragraph">Something here</p>
+                    <h4>Im a header</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="content-area_content_image_button">
+                        <button>
+                            <a href="#">How to</a>
+                        </button>
+                    </div>
+                </div>
+                <!--done copy content-->
+
+                <!--start copy content-->
+                <div class="content-area_content_box">
+                    <p class="content-area_content_box_paragraph">Something here</p>
+                    <h4>Im a header</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="content-area_content_image_button">
+                        <button>
+                            <a href="#">How to</a>
+                        </button>
+                    </div>
+                </div>
+                <!--done copy content-->
+
+                <!--start copy content-->
+                <div class="content-area_content_box_img">
+                    <img src="https://picsum.photos/560/380" alt="">
+                </div>
+                <!--done copy content-->
+
+
+            </div>
+
+
+
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+
+                <!-- Social media -->
+                <div class="footer-social">
+                    <a href="#">
+                        <span class="footer-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                viewBox="0 0 1024 1024">
+                                <path d="M0 0h1024v1024H0z" fill="none" />
+                                <path fill="currentColor"
+                                    d="M960 509.2c0-2.2 0-4.7-.1-7.6c-.1-8.1-.3-17.2-.5-26.9c-.8-27.9-2.2-55.7-4.4-81.9c-3-36.1-7.4-66.2-13.4-88.8a139.52 139.52 0 0 0-98.3-98.5c-28.3-7.6-83.7-12.3-161.7-15.2c-37.1-1.4-76.8-2.3-116.5-2.8c-13.9-.2-26.8-.3-38.4-.4h-29.4c-11.6.1-24.5.2-38.4.4c-39.7.5-79.4 1.4-116.5 2.8c-78 3-133.5 7.7-161.7 15.2A139.35 139.35 0 0 0 82.4 304C76.3 326.6 72 356.7 69 392.8c-2.2 26.2-3.6 54-4.4 81.9c-.3 9.7-.4 18.8-.5 26.9c0 2.9-.1 5.4-.1 7.6v5.6c0 2.2 0 4.7.1 7.6c.1 8.1.3 17.2.5 26.9c.8 27.9 2.2 55.7 4.4 81.9c3 36.1 7.4 66.2 13.4 88.8c12.8 47.9 50.4 85.7 98.3 98.5c28.2 7.6 83.7 12.3 161.7 15.2c37.1 1.4 76.8 2.3 116.5 2.8c13.9.2 26.8.3 38.4.4h29.4c11.6-.1 24.5-.2 38.4-.4c39.7-.5 79.4-1.4 116.5-2.8c78-3 133.5-7.7 161.7-15.2c47.9-12.8 85.5-50.5 98.3-98.5c6.1-22.6 10.4-52.7 13.4-88.8c2.2-26.2 3.6-54 4.4-81.9c.3-9.7.4-18.8.5-26.9c0-2.9.1-5.4.1-7.6zm-72 5.2c0 2.1 0 4.4-.1 7.1c-.1 7.8-.3 16.4-.5 25.7c-.7 26.6-2.1 53.2-4.2 77.9c-2.7 32.2-6.5 58.6-11.2 76.3c-6.2 23.1-24.4 41.4-47.4 47.5c-21 5.6-73.9 10.1-145.8 12.8c-36.4 1.4-75.6 2.3-114.7 2.8c-13.7.2-26.4.3-37.8.3h-28.6l-37.8-.3c-39.1-.5-78.2-1.4-114.7-2.8c-71.9-2.8-124.9-7.2-145.8-12.8c-23-6.2-41.2-24.4-47.4-47.5c-4.7-17.7-8.5-44.1-11.2-76.3c-2.1-24.7-3.4-51.3-4.2-77.9c-.3-9.3-.4-18-.5-25.7c0-2.7-.1-5.1-.1-7.1v-4.8c0-2.1 0-4.4.1-7.1c.1-7.8.3-16.4.5-25.7c.7-26.6 2.1-53.2 4.2-77.9c2.7-32.2 6.5-58.6 11.2-76.3c6.2-23.1 24.4-41.4 47.4-47.5c21-5.6 73.9-10.1 145.8-12.8c36.4-1.4 75.6-2.3 114.7-2.8c13.7-.2 26.4-.3 37.8-.3h28.6l37.8.3c39.1.5 78.2 1.4 114.7 2.8c71.9 2.8 124.9 7.2 145.8 12.8c23 6.2 41.2 24.4 47.4 47.5c4.7 17.7 8.5 44.1 11.2 76.3c2.1 24.7 3.4 51.3 4.2 77.9c.3 9.3.4 18 .5 25.7c0 2.7.1 5.1.1 7.1zM423 646l232-135l-232-133z" />
+                            </svg>
+                        </span>
+                        YouTube
+                    </a>
+
+                    <a href="#">
+                        <span class="footer-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                viewBox="0 0 1024 1024">
+                                <path d="M0 0h1024v1024H0z" fill="none" />
+                                <path fill="currentColor"
+                                    d="M512 306.9c-113.5 0-205.1 91.6-205.1 205.1S398.5 717.1 512 717.1S717.1 625.5 717.1 512S625.5 306.9 512 306.9m0 338.4c-73.4 0-133.3-59.9-133.3-133.3S438.6 378.7 512 378.7S645.3 438.6 645.3 512S585.4 645.3 512 645.3m213.5-394.6c-26.5 0-47.9 21.4-47.9 47.9s21.4 47.9 47.9 47.9s47.9-21.3 47.9-47.9a47.84 47.84 0 0 0-47.9-47.9M911.8 512c0-55.2.5-109.9-2.6-165c-3.1-64-17.7-120.8-64.5-167.6c-46.9-46.9-103.6-61.4-167.6-64.5c-55.2-3.1-109.9-2.6-165-2.6c-55.2 0-109.9-.5-165 2.6c-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6c46.9 46.9 103.6 61.4 167.6 64.5c55.2 3.1 109.9 2.6 165 2.6c55.2 0 109.9.5 165-2.6c64-3.1 120.8-17.7 167.6-64.5c46.9-46.9 61.4-103.6 64.5-167.6c3.2-55.1 2.6-109.8 2.6-165m-88 235.8c-7.3 18.2-16.1 31.8-30.2 45.8c-14.1 14.1-27.6 22.9-45.8 30.2C695.2 844.7 570.3 840 512 840s-183.3 4.7-235.9-16.1c-18.2-7.3-31.8-16.1-45.8-30.2c-14.1-14.1-22.9-27.6-30.2-45.8C179.3 695.2 184 570.3 184 512s-4.7-183.3 16.1-235.9c7.3-18.2 16.1-31.8 30.2-45.8s27.6-22.9 45.8-30.2C328.7 179.3 453.7 184 512 184s183.3-4.7 235.9 16.1c18.2 7.3 31.8 16.1 45.8 30.2c14.1 14.1 22.9 27.6 30.2 45.8C844.7 328.7 840 453.7 840 512s4.7 183.2-16.2 235.8" />
+                            </svg>
+                        </span>
+                        Instagram
+                    </a>
+
+                    <a href="#">
+                        <span class="footer-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path fill="currentColor"
+                                    d="M19.02 4.975A9.93 9.93 0 0 0 2.07 12A9.935 9.935 0 0 0 12 21.935a10 10 0 0 0 3.8-.75a10.2 10.2 0 0 0 3.22-2.16a9.934 9.934 0 0 0 0-14.05m-.7 13.34a8.92 8.92 0 0 1-5.32 2.57v-6.56h1.88a1 1 0 0 0 0-2H13v-2.74a1 1 0 0 1 1-1h1.2a1 1 0 0 0 0-2h-1.7a2.5 2.5 0 0 0-2.5 2.5v3.24H9.13a1 1 0 1 0 0 2H11v6.56a8.919 8.919 0 1 1 9.26-5.47a9.1 9.1 0 0 1-1.94 2.9" />
+                            </svg>
+                        </span>
+                        Facebook
+                    </a>
+                </div>
+
+                <!-- Footer navigation -->
+                <div class="footer-menu">
+                    <a href="Recipe_home.html">Home</a>
+                    <a href="Recipe_details.html">Recipe</a>
+                    <a href="#">About</a>
+                </div>
+
+                <!-- Right side -->
+                <div class="footer-right">
+
+                    <div class="footer-links">
+                        <a href="https://open.spotify.com/">
+                            https://open.spotify.com/track/...
+                        </a>
+                        <a href="https://open.spotify.com/">
+                            https://open.spotify.com/album/...
+                        </a>
+                    </div>
+
+                    <div class="footer-eco">
+                        <span class="eco-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                viewBox="0 0 16 16">
+                                <path d="M0 0h16v16H0z" fill="none" />
+                                <g fill="currentColor">
+                                    <path
+                                        d="M7.542 1.014A7 7 0 0 1 14 4.396V3a1.001 1.001 0 0 1 2 0v4a1 1 0 0 1-1 1h-1.933c.32-.905-.312-2-1.419-2h.933a5 5 0 0 0-1.67-2.065l-.099-.068l.158-.625a1 1 0 0 0-1.62-1.001l-.91.78a5 5 0 0 0-5.436 4.808c-.283.556-.165 1.225.226 1.672a5 5 0 0 0 1.956 2.63l-.156.627a1 1 0 0 0 1.62 1l.91-.779a5 5 0 0 0 4.77-2.48a1.001 1.001 0 0 1 1.732 1a7 7 0 0 1-8.312 3.13a7.005 7.005 0 0 1-4.69-7.543a7 7 0 0 1 6.482-6.072" />
+                                    <path
+                                        d="M9 7h2.648l.084.007a.5.5 0 0 1 .118.035l.026.01l.035.022l.022.014l.012.008q.014.01.025.022l.021.017a.5.5 0 0 1 .072.087l.016.025l.018.034l.011.025l.012.033a.5.5 0 0 1 .024.106q.004.02.004.04v.028a.5.5 0 0 1-.061.227l-.01.019a.5.5 0 0 1-.104.12L6 13l.094-.378L7 9H4.35a.5.5 0 0 1-.325-.88l5.639-4.834L10 3z" />
+                                </g>
+                            </svg>
+                        </span>
+                        <p>
+                            Etsy is powered by 100%<br>
+                            renewable electricity.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
+
+
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
