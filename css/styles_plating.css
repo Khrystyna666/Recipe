@@ -1,0 +1,474 @@
+
+:root {
+  --width-full: 100%;
+  --width-12col: 1200px;
+  --grid-gap: 10px;
+  --padding-default: 20px;
+
+  --background-color-navigation: #00000088;
+  --background-color-light: #ededed;
+  --background-color-dark-bg: #111111;
+  --primary-colour: #bf5b23;
+  --color-light: #ededed;
+  --color-dark: #373737;
+  --color-white: #ffffff;
+
+  --category-seafood: #3e30e2;
+  --category-chicken: #299c8e;
+  --category-meats: #d09189;
+  --category-veg: #298f3f;
+  --category-dessert: #9374eb;
+  --category-misc: #9a951e;
+  --category-pasta: #bf5b23;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: var(--width-full);
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-color-dark-bg);
+  color: var(--background-color-light);
+  position: relative;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto;
+  gap: var(--grid-gap);
+  width: var(--width-full);
+}
+
+.hamburger_menu,
+.mobile_menu {
+  display: none;
+}
+
+.navigation {
+  width: var(--width-full);
+  height: 80px;
+  background-color: var(--background-color-navigation);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+}
+
+.navigation.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.menu-container {
+  width: var(--width-12col);
+}
+
+.menu-container ul {
+  display: flex;
+}
+
+.menu-container ul li {
+  list-style: none;
+}
+
+.menu-container a {
+  color: var(--background-color-light);
+  text-decoration: none;
+  padding: 0 10px;
+  border-right: 2px solid var(--background-color-light);
+}
+
+.menu-container li:last-child a {
+  border: none;
+}
+
+.menu-container a:hover {
+  color: var(--primary-colour);
+}
+
+/* Hero */
+
+.plating-hero {
+  min-height: 650px;
+  width: var(--width-full);
+  background-image: url("https://picsum.photos/id/1060/1920/900");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.plating-hero-content {
+  width: var(--width-12col);
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 80px;
+}
+
+.plating-hero-box {
+  background-color: var(--background-color-navigation);
+  padding: 25px;
+  max-width: 590px;
+}
+
+.plating-hero-box h1 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.plating-hero-box p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Plating sections */
+
+.plating-container {
+  width: var(--width-12col);
+  margin: 0 auto;
+}
+
+.plating-section {
+  margin-top: 65px;
+}
+
+.plating-section h2 {
+  font-size: 37px;
+  padding-bottom: 15px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--background-color-light);
+}
+
+.plating-card {
+  background-color: var(--background-color-light);
+  color: var(--background-color-dark-bg);
+  padding: 45px 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 60px;
+  align-items: center;
+}
+
+.plating-text {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.plating-text .small-title {
+  border-left: 2px solid var(--primary-colour);
+  padding-left: 10px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.plating-text h3 {
+  color: var(--primary-colour);
+  font-size: 22px;
+  margin-bottom: 22px;
+}
+
+.plating-text p,
+.plating-text li {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.plating-text ul {
+  padding-left: 22px;
+}
+
+.plating-photo {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.plating-photo img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.plating-action {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.plating-action button {
+  background-color: var(--color-dark);
+  border: 1px solid var(--color-light);
+  color: var(--color-white);
+  font-size: 14px;
+  padding: 8px 35px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.plating-action button:hover {
+  color: var(--primary-colour);
+}
+
+.plating-card.reverse .plating-photo {
+  grid-column: 1;
+}
+
+.plating-card.reverse .plating-text {
+  grid-column: 2;
+}
+
+.plating-card.reverse .plating-action {
+  grid-column: 2;
+}
+
+/* Footer */
+
+.footer {
+  width: var(--width-full);
+  background-color: var(--primary-colour);
+  margin-top: 40px;
+  padding: 45px 20px;
+}
+
+.footer-container {
+  width: var(--width-12col);
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr;
+  gap: 40px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: var(--background-color-dark-bg);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-icon {
+  font-size: 25px;
+  width: 30px;
+  text-align: center;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-menu a {
+  color: var(--background-color-dark-bg);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-right {
+  border-left: 2px solid var(--color-light);
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 25px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: right;
+}
+
+.footer-links a {
+  color: var(--color-white);
+  font-size: 12px;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.footer-eco {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.eco-icon {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  color: var(--background-color-dark-bg);
+}
+
+.footer-eco p {
+  font-size: 11px;
+  line-height: 1.5;
+  text-align: left;
+  color: var(--background-color-dark-bg);
+  max-width: 180px;
+}
+
+.footer a:hover {
+  opacity: 0.7;
+}
+
+/* Responsive layout */
+
+@media (width <= 768px) {
+  :root {
+    --width-12col: 100%;
+  }
+
+  .hamburger_menu {
+    display: block;
+    font-size: 24px;
+    color: var(--color-light);
+    margin-left: auto;
+  }
+
+  .menu-container {
+    display: none;
+  }
+
+  .mobile_menu {
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 180px;
+    height: auto;
+    background-color: var(--color-dark);
+    opacity: 0;
+    z-index: 1000;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: 0.3s ease;
+  }
+
+  .mobile_menu.open {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .mobile_menu ul {
+    padding: 0;
+  }
+
+  .mobile_menu ul li {
+    list-style: none;
+    padding: 15px;
+  }
+
+  .mobile_menu ul li a {
+    text-decoration: none;
+    color: var(--color-light);
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 12px;
+  }
+
+  .plating-hero {
+    min-height: 550px;
+  }
+
+  .plating-hero-content {
+    padding: 0 20px 30px;
+  }
+
+  .plating-hero-box {
+    padding: 20px;
+  }
+
+  .plating-hero-box h1 {
+    font-size: 18px;
+  }
+
+  .plating-hero-box p {
+    font-size: 12px;
+  }
+
+  .plating-container {
+    width: calc(100% - 40px);
+  }
+
+  .plating-section {
+    margin-top: 40px;
+  }
+
+  .plating-section h2 {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+
+  .plating-card {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+    gap: 25px;
+  }
+
+  .plating-text,
+  .plating-card.reverse .plating-text {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .plating-photo,
+  .plating-card.reverse .plating-photo {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .plating-action,
+  .plating-card.reverse .plating-action {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .plating-photo img {
+    height: auto;
+  }
+
+  .footer-container {
+    width: calc(100% - 40px);
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .footer-right {
+    grid-column: 1 / -1;
+    border-left: none;
+    border-top: 1px solid var(--color-light);
+    padding-left: 0;
+    padding-top: 25px;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    text-align: left;
+  }
+}
