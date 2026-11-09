@@ -161,17 +161,20 @@ body {
   background-color: var(--background-color-navigation);
   padding: 20px;
   display: flex;
-  justify-content: center; /*what a fuck*/
-  align-items: center; /*what a fuck*/
+  justify-content: center; 
+  align-items: center; 
   z-index: 10;
   position: absolute;
-  top: 20px;
+  top: 0;
   left: 0;
+  text-transform: uppercase;
 }
 
 .navigation.fixed {
-  position: fixed;
-  top: 0;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 1000;
 }
 
 .menu-container {
@@ -190,7 +193,7 @@ body {
   color: var(--background-color-light);
   text-decoration: none;
   padding: 0 10px;
-  border-right: 1px solid var(--background-color-light);
+  border-right: 2px solid var(--background-color-light);
 }
 
 .menu-container li:last-child a {
